@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <title>control video with video.js</title>
+    <link rel="stylesheet" href="video-js/video-js.min.css">
+    <script src="video-js/video.min.js"></script>
+    <script>
+      videojs.options.flash.swf = 'video-js/video-js.swf';
+    </script>
+  </head>
+  <body>
+    <video id="js-video" class="video-js vjs-default-skin" width="360" height="240" controls>
+      <source type="video/mp4" src="SampleVideo_360x240_1mb.mp4">
+    </video>
+
+    <input id="js-toggle" type="button" value="play/pause">
+    <input id="js-poster" type="button" value="change poster">
+
+    <input id="js-show" type="button" value="show">
+    <input id="js-hide" type="button" value="hide">
+
+    <address>
+      Sample Videos Copyright(c) Sample Video Developers | <a href="http://www.sample-videos.com/">http://www.sample-videos.com/</a>
+    </address>
+
+    <script src="index.js"></script>
+  </body>
+</html>
